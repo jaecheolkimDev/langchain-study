@@ -46,6 +46,15 @@ langchain-study
 
 ## 📦 설정 및 실행 방법 (Configuration & Setup)
 ```
+1) Python 가상환경 활성화
+2) AI 모델 다운로드
+    $ ollama pull llama3
+3) pip 업그레이드
+    $ pip install --upgrade pip
+4) ollama 필수 패키지 설치
+    $ pip install langchain langchain-ollama
+5) ollama 목록 보기
+    $ ollama list
 ```
 
 ## 🛠 주요 라이브러리 (Dependencies)
