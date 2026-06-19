@@ -2,14 +2,15 @@ from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
+from core.llm_config import get_llm
 
-# 1. LLM 객체 생성
-llm = OllamaLLM(model="llama3")
+# 필요할 때 호출만 하면 항상 동일한 설정의 llm 객체가 생성됩니다.
+llm = get_llm()
 
 # 2. 프롬프트 템플릿 생성 (과거 대화 내역이 들어갈 공간인 MessagesPlaceholder가 추가됨)
 prompt = ChatPromptTemplate.from_messages([
     ("system", "당신은 친절한 AI 어시스턴트입니다."),
-    MessagesPlaceholder(variable_name="history"), # 자바의 List<Message> 자리를 비워두는 것과 같음
+    MessagesPlaceholder(variable_name="messages"), # 자바의 List<Message> 자리를 비워두는 것과 같음
     ("human", "{question}")
 ])
 
