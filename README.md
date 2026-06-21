@@ -18,6 +18,8 @@
 [ ] RAG
 [ ] LangGraph
 [ ] MCP
+[ ] 섹션3, 5 코드 - RAG를 활용한 LLM Application 개발 (feat. LangChain)
+[ ] 섹션4 코드 - RAG를 활용한 LLM Application 개발 (feat. LangChain)
 ```
 ---
 
