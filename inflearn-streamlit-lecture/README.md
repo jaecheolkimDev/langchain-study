@@ -27,7 +27,7 @@ This repository contains a project that utilizes LangChain and Streamlit to buil
     source venv/bin/activate
     ```
 
-3. Install the required dependencies:
+3. Install the required dependencies: 파일에 적힌 패키지들을 한 번에 설치할 때
     ```sh
     pip install -r requirements.txt
     ```

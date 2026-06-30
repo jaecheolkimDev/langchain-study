@@ -2,3 +2,9 @@
 venv/
 .idea/
 __pycache__/
+chroma/
+*.docx
+*.doc
+.ipynb_checkpoints/
+inflearn-lectures/
+.DS_Store
